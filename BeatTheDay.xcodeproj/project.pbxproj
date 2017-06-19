@@ -22,6 +22,7 @@
 		7C6BE8ED1EF84193008B86F9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8EC1EF84193008B86F9 /* Task.swift */; };
 		7C6BE8EF1EF842D1008B86F9 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8EE1EF842D1008B86F9 /* TaskDataStore.swift */; };
 		7C6BE8F11EF8438D008B86F9 /* TaskMockDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8F01EF8438D008B86F9 /* TaskMockDataStore.swift */; };
+		7C6BE8F61EF85C20008B86F9 /* Anchorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6BE8F51EF85C20008B86F9 /* Anchorage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		7C6BE8EC1EF84193008B86F9 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		7C6BE8EE1EF842D1008B86F9 /* TaskDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
 		7C6BE8F01EF8438D008B86F9 /* TaskMockDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskMockDataStore.swift; sourceTree = "<group>"; };
+		7C6BE8F51EF85C20008B86F9 /* Anchorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Anchorage.framework; path = Carthage/Build/iOS/Anchorage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6BE8F61EF85C20008B86F9 /* Anchorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,7 @@
 			children = (
 				7C6BE8B21EF83A6F008B86F9 /* BeatTheDay */,
 				7C6BE8B11EF83A6F008B86F9 /* Products */,
+				7C6BE8F41EF85C20008B86F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +170,14 @@
 			path = DataStore;
 			sourceTree = "<group>";
 		};
+		7C6BE8F41EF85C20008B86F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C6BE8F51EF85C20008B86F9 /* Anchorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +188,7 @@
 				7C6BE8AC1EF83A6F008B86F9 /* Sources */,
 				7C6BE8AD1EF83A6F008B86F9 /* Frameworks */,
 				7C6BE8AE1EF83A6F008B86F9 /* Resources */,
+				7C6BE8F71EF85C48008B86F9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -231,6 +244,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C6BE8F71EF85C48008B86F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Anchorage.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C6BE8AC1EF83A6F008B86F9 /* Sources */ = {
@@ -366,6 +396,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BeatTheDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = avilin.BeatTheDay;
@@ -378,6 +412,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BeatTheDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = avilin.BeatTheDay;
