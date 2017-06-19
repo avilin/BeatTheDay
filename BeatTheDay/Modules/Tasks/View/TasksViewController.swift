@@ -13,6 +13,14 @@ class TasksViewController: UIViewController {
     var presenter: TasksModuleInterface?
 
     fileprivate var tasks: [Task] = []
+    fileprivate var tasksView: TasksView!
+
+    override func loadView() {
+        super.loadView()
+
+        view = TasksView(frame: .zero)
+        tasksView = view as! TasksView
+    }
 
     // MARK: - Lifecycle
     override func viewDidLoad() {

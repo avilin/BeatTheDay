@@ -23,6 +23,7 @@
 		7C6BE8EF1EF842D1008B86F9 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8EE1EF842D1008B86F9 /* TaskDataStore.swift */; };
 		7C6BE8F11EF8438D008B86F9 /* TaskMockDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8F01EF8438D008B86F9 /* TaskMockDataStore.swift */; };
 		7C6BE8F61EF85C20008B86F9 /* Anchorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6BE8F51EF85C20008B86F9 /* Anchorage.framework */; };
+		7C6BE8F91EF85E65008B86F9 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8F81EF85E65008B86F9 /* TasksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		7C6BE8EE1EF842D1008B86F9 /* TaskDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
 		7C6BE8F01EF8438D008B86F9 /* TaskMockDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskMockDataStore.swift; sourceTree = "<group>"; };
 		7C6BE8F51EF85C20008B86F9 /* Anchorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Anchorage.framework; path = Carthage/Build/iOS/Anchorage.framework; sourceTree = "<group>"; };
+		7C6BE8F81EF85E65008B86F9 /* TasksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				7C6BE8DC1EF8403A008B86F9 /* TasksViewInterface.swift */,
 				7C6BE8D11EF83ACE008B86F9 /* TasksViewController.swift */,
+				7C6BE8F81EF85E65008B86F9 /* TasksView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				7C6BE8EF1EF842D1008B86F9 /* TaskDataStore.swift in Sources */,
 				7C6BE8E01EF84048008B86F9 /* TasksInteractorOutput.swift in Sources */,
 				7C6BE8EA1EF84103008B86F9 /* TasksWireFrame.swift in Sources */,
+				7C6BE8F91EF85E65008B86F9 /* TasksView.swift in Sources */,
 				7C6BE8B41EF83A6F008B86F9 /* AppDelegate.swift in Sources */,
 				7C6BE8D51EF83ACE008B86F9 /* TasksPresenter.swift in Sources */,
 				7C6BE8ED1EF84193008B86F9 /* Task.swift in Sources */,
