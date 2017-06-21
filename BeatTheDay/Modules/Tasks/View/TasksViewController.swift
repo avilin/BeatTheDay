@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Anchorage
 
 class TasksViewController: UIViewController {
 
@@ -25,7 +26,11 @@ class TasksViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+
+        tasksView.tableView.register(TaskTableViewCell.self, forCellReuseIdentifier: "TaskCell")
+        tasksView.tableView.dataSource = self
+
+        updateView()
     }
 
     func updateView() {
@@ -39,6 +44,31 @@ extension TasksViewController: TasksViewInterface {
 
     func showTasks(_ tasks: [Task]) {
         self.tasks = tasks
+        tasksView.tableView.reloadData()
+    }
+
+}
+
+// MARK: - UITableViewDataSource
+extension TasksViewController: UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath)
+        guard let taskCell = cell as? TaskTableViewCell else {
+            fatalError("Wrong cell")
+        }
+
+        taskCell.label.text = tasks[indexPath.row].name
+
+        return taskCell
     }
 
 }

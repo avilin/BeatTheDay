@@ -13,7 +13,7 @@ class TasksView: UIView {
 
     var tableView: UITableView!
 
-    var shouldSetupConstraints = true
+    private var shouldSetupConstraints = true
 
     override init(frame: CGRect) {
         super.init(frame: frame)

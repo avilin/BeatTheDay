@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C603F381EFAE79500529D58 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C603F371EFAE79500529D58 /* TaskTableViewCell.swift */; };
 		7C6BE8B41EF83A6F008B86F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8B31EF83A6F008B86F9 /* AppDelegate.swift */; };
 		7C6BE8BB1EF83A6F008B86F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6BE8BA1EF83A6F008B86F9 /* Assets.xcassets */; };
 		7C6BE8BE1EF83A6F008B86F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6BE8BC1EF83A6F008B86F9 /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C603F371EFAE79500529D58 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		7C6BE8B01EF83A6F008B86F9 /* BeatTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6BE8B31EF83A6F008B86F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6BE8BA1EF83A6F008B86F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C603F361EFAE76500529D58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C603F371EFAE79500529D58 /* TaskTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7C6BE8A71EF83A6F008B86F9 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 			children = (
 				7C6BE8EB1EF84188008B86F9 /* DataStore */,
 				7C6BE8E51EF840D4008B86F9 /* Entity */,
+				7C603F361EFAE76500529D58 /* Views */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -272,6 +283,7 @@
 			files = (
 				7C6BE8EF1EF842D1008B86F9 /* TaskDataStore.swift in Sources */,
 				7C6BE8E01EF84048008B86F9 /* TasksInteractorOutput.swift in Sources */,
+				7C603F381EFAE79500529D58 /* TaskTableViewCell.swift in Sources */,
 				7C6BE8EA1EF84103008B86F9 /* TasksWireFrame.swift in Sources */,
 				7C6BE8F91EF85E65008B86F9 /* TasksView.swift in Sources */,
 				7C6BE8B41EF83A6F008B86F9 /* AppDelegate.swift in Sources */,
