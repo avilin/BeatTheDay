@@ -66,7 +66,7 @@ extension GoalsViewController: UITableViewDataSource {
             fatalError("Wrong cell")
         }
 
-        goalCell.label.text = goals[indexPath.row].name
+        goalCell.nameLabel.text = goals[indexPath.row].name
 
         return goalCell
     }

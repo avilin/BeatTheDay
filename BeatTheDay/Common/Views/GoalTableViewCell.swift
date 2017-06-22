@@ -11,7 +11,7 @@ import Anchorage
 
 class GoalTableViewCell: UITableViewCell {
 
-    var label: UILabel!
+    var nameLabel: UILabel!
 
     private var shouldSetupConstraints = true
 
@@ -28,8 +28,8 @@ class GoalTableViewCell: UITableViewCell {
     }
 
     private func setupView() {
-        label = UILabel()
-        contentView.addSubview(label)
+        nameLabel = UILabel()
+        contentView.addSubview(nameLabel)
 
         setNeedsUpdateConstraints()
     }
@@ -37,10 +37,10 @@ class GoalTableViewCell: UITableViewCell {
     override func updateConstraints() {
         if (shouldSetupConstraints) {
 
-            label.leadingAnchor == contentView.leadingAnchor + 8
-            label.trailingAnchor == contentView.trailingAnchor + 8
-            label.topAnchor == contentView.topAnchor + 8
-            label.bottomAnchor == contentView.bottomAnchor + 8
+            nameLabel.leadingAnchor == contentView.leadingAnchor + 8
+            nameLabel.trailingAnchor == contentView.trailingAnchor + 8
+            nameLabel.topAnchor == contentView.topAnchor + 8
+            nameLabel.bottomAnchor == contentView.bottomAnchor + 8
 
             shouldSetupConstraints = false
         }
