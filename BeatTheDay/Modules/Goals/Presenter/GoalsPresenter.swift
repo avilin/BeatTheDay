@@ -6,6 +6,8 @@
 //  Copyright © 2017 Andrés Vicente Linares. All rights reserved.
 //
 
+import Foundation
+
 class GoalsPresenter {
 
     weak var view: GoalsViewInterface?
@@ -27,7 +29,18 @@ extension GoalsPresenter: GoalsModuleInterface {
 extension GoalsPresenter: GoalsInteractorOutput {
 
     func goalsFetched(_ goals: [Goal]) {
-        view?.showGoals(goals)
+        let goalDTOs = goals.map { (goal) -> GoalDTO in
+            var status = GoalStatus.pending
+            if goal.completed {
+                status = .completed
+            } else if goal.dueDate > Date() {
+                status = .pending
+            } else {
+                status = .expired
+            }
+            return GoalDTO(name: goal.name, goalStatus: status)
+        }
+        view?.showGoals(goalDTOs)
     }
 
 }

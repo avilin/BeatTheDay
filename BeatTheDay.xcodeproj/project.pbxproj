@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C58877D1EFC5606007F32BC /* GoalDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58877C1EFC5606007F32BC /* GoalDTO.swift */; };
 		7C603F381EFAE79500529D58 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C603F371EFAE79500529D58 /* GoalTableViewCell.swift */; };
 		7C6BE8B41EF83A6F008B86F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8B31EF83A6F008B86F9 /* AppDelegate.swift */; };
 		7C6BE8BB1EF83A6F008B86F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6BE8BA1EF83A6F008B86F9 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C58877C1EFC5606007F32BC /* GoalDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDTO.swift; sourceTree = "<group>"; };
 		7C603F371EFAE79500529D58 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		7C6BE8B01EF83A6F008B86F9 /* BeatTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6BE8B31EF83A6F008B86F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C58877B1EFC55EE007F32BC /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				7C58877C1EFC5606007F32BC /* GoalDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
 		7C603F361EFAE76500529D58 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		7C6BE8E41EF84098008B86F9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7C58877B1EFC55EE007F32BC /* DTOs */,
 				7C6BE8EB1EF84188008B86F9 /* DataStore */,
 				7C6BE8E51EF840D4008B86F9 /* Entity */,
 				7C603F361EFAE76500529D58 /* Views */,
@@ -283,6 +294,7 @@
 			files = (
 				7C6BE8EF1EF842D1008B86F9 /* GoalDataStore.swift in Sources */,
 				7C6BE8E01EF84048008B86F9 /* GoalsInteractorOutput.swift in Sources */,
+				7C58877D1EFC5606007F32BC /* GoalDTO.swift in Sources */,
 				7C603F381EFAE79500529D58 /* GoalTableViewCell.swift in Sources */,
 				7C6BE8EA1EF84103008B86F9 /* GoalsWireFrame.swift in Sources */,
 				7C6BE8F91EF85E65008B86F9 /* GoalsView.swift in Sources */,

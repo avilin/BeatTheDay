@@ -8,6 +8,6 @@
 
 protocol GoalsViewInterface: class {
 
-    func showGoals(_ goals: [Goal])
+    func showGoals(_ goals: [GoalDTO])
 
 }

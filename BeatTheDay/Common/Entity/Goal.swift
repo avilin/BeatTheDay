@@ -11,10 +11,12 @@ import Foundation
 class Goal {
 
     let name: String
+    let completed: Bool
     let dueDate: Date
 
-    init(name: String, dueDate: Date) {
+    init(name: String, completed: Bool, dueDate: Date) {
         self.name = name
+        self.completed = completed
         self.dueDate = dueDate
     }
 

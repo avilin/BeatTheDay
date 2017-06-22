@@ -13,7 +13,7 @@ class GoalsViewController: UIViewController {
 
     var presenter: GoalsModuleInterface?
 
-    fileprivate var goals: [Goal] = []
+    fileprivate var goals: [GoalDTO] = []
     fileprivate var goalsView: GoalsView!
 
     override func loadView() {
@@ -42,7 +42,7 @@ class GoalsViewController: UIViewController {
 // MARK: - GoalsViewInterface
 extension GoalsViewController: GoalsViewInterface {
 
-    func showGoals(_ goals: [Goal]) {
+    func showGoals(_ goals: [GoalDTO]) {
         self.goals = goals
         goalsView.tableView.reloadData()
     }
@@ -66,7 +66,19 @@ extension GoalsViewController: UITableViewDataSource {
             fatalError("Wrong cell")
         }
 
-        goalCell.statusImageView.image = #imageLiteral(resourceName: "Time")
+        let goal = goals[indexPath.row]
+
+        var image = #imageLiteral(resourceName: "Time")
+        switch goal.goalStatus {
+        case .completed:
+            image = #imageLiteral(resourceName: "Check")
+        case .pending:
+            image = #imageLiteral(resourceName: "Time")
+        case .expired:
+            image = #imageLiteral(resourceName: "Denied")
+        }
+        goalCell.statusImageView.image = image
+        
         goalCell.nameLabel.text = goals[indexPath.row].name
 
         return goalCell
