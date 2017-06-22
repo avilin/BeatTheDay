@@ -1,5 +1,5 @@
 //
-//  Task.swift
+//  Goal.swift
 //  BeatTheDay
 //
 //  Created by Andrés Vicente Linares on 19/6/17.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Task {
+class Goal {
 
     let name: String
     let dueDate: Date

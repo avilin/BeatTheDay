@@ -1,5 +1,5 @@
 //
-//  TasksView.swift
+//  GoalsView.swift
 //  BeatTheDay
 //
 //  Created by Andrés Vicente Linares on 19/6/17.
@@ -9,7 +9,7 @@
 import UIKit
 import Anchorage
 
-class TasksView: UIView {
+class GoalsView: UIView {
 
     var tableView: UITableView!
 

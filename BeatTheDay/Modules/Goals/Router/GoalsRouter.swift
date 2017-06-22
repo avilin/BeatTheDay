@@ -1,5 +1,5 @@
 //
-//  TasksWireframe.swift
+//  GoalsWireframe.swift
 //  BeatTheDay
 //
 //  Created by Andrés Vicente Linares on 18/6/17.
@@ -8,28 +8,28 @@
 
 import UIKit
 
-class TasksRouter {
+class GoalsRouter {
 
     weak var viewController: UIViewController?
 
     func assembleModule() -> UIViewController {
-        let view = TasksViewController()
-        let presenter = TasksPresenter()
-        let interactor = TasksInteractor()
-        let taskDataStore = TaskMockDataStore()
+        let view = GoalsViewController()
+        let presenter = GoalsPresenter()
+        let interactor = GoalsInteractor()
+        let goalDataStore = GoalMockDataStore()
 
         view.presenter = presenter
         presenter.view = view
         presenter.router = self
         presenter.interactor = interactor
         interactor.presenter = presenter
-        interactor.dataStore = taskDataStore
+        interactor.dataStore = goalDataStore
 
         return view
     }
 
 }
 
-extension TasksRouter: TasksWireFrame {
+extension GoalsRouter: GoalsWireFrame {
 
 }

@@ -1,5 +1,5 @@
 //
-//  TaskDataStore.swift
+//  GoalDataStore.swift
 //  BeatTheDay
 //
 //  Created by Andrés Vicente Linares on 19/6/17.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol TaskDataStore {
+protocol GoalDataStore {
 
-    typealias FindAllCallback = ([Task]) -> Void
+    typealias FindAllCallback = ([Goal]) -> Void
 
     func fetchAll(callback: FindAllCallback)
 

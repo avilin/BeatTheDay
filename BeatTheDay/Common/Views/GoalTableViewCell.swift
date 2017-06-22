@@ -1,5 +1,5 @@
 //
-//  TaskTableViewCell.swift
+//  GoalTableViewCell.swift
 //  BeatTheDay
 //
 //  Created by Andrés Vicente Linares on 21/6/17.
@@ -9,7 +9,7 @@
 import UIKit
 import Anchorage
 
-class TaskTableViewCell: UITableViewCell {
+class GoalTableViewCell: UITableViewCell {
 
     var label: UILabel!
 

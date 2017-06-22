@@ -7,47 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C603F381EFAE79500529D58 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C603F371EFAE79500529D58 /* TaskTableViewCell.swift */; };
+		7C603F381EFAE79500529D58 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C603F371EFAE79500529D58 /* GoalTableViewCell.swift */; };
 		7C6BE8B41EF83A6F008B86F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8B31EF83A6F008B86F9 /* AppDelegate.swift */; };
 		7C6BE8BB1EF83A6F008B86F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6BE8BA1EF83A6F008B86F9 /* Assets.xcassets */; };
 		7C6BE8BE1EF83A6F008B86F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6BE8BC1EF83A6F008B86F9 /* LaunchScreen.storyboard */; };
-		7C6BE8D21EF83ACE008B86F9 /* TasksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8C81EF83ACE008B86F9 /* TasksInteractor.swift */; };
-		7C6BE8D51EF83ACE008B86F9 /* TasksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8CC1EF83ACE008B86F9 /* TasksPresenter.swift */; };
-		7C6BE8D91EF83ACE008B86F9 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8D11EF83ACE008B86F9 /* TasksViewController.swift */; };
-		7C6BE8DD1EF8403A008B86F9 /* TasksViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8DC1EF8403A008B86F9 /* TasksViewInterface.swift */; };
-		7C6BE8E01EF84048008B86F9 /* TasksInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8DE1EF84048008B86F9 /* TasksInteractorOutput.swift */; };
-		7C6BE8E11EF84048008B86F9 /* TasksModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8DF1EF84048008B86F9 /* TasksModuleInterface.swift */; };
-		7C6BE8E31EF84053008B86F9 /* TasksInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8E21EF84053008B86F9 /* TasksInteractorInput.swift */; };
-		7C6BE8E91EF84103008B86F9 /* TasksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8E71EF84103008B86F9 /* TasksRouter.swift */; };
-		7C6BE8EA1EF84103008B86F9 /* TasksWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8E81EF84103008B86F9 /* TasksWireFrame.swift */; };
-		7C6BE8ED1EF84193008B86F9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8EC1EF84193008B86F9 /* Task.swift */; };
-		7C6BE8EF1EF842D1008B86F9 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8EE1EF842D1008B86F9 /* TaskDataStore.swift */; };
-		7C6BE8F11EF8438D008B86F9 /* TaskMockDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8F01EF8438D008B86F9 /* TaskMockDataStore.swift */; };
+		7C6BE8D21EF83ACE008B86F9 /* GoalsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8C81EF83ACE008B86F9 /* GoalsInteractor.swift */; };
+		7C6BE8D51EF83ACE008B86F9 /* GoalsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8CC1EF83ACE008B86F9 /* GoalsPresenter.swift */; };
+		7C6BE8D91EF83ACE008B86F9 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8D11EF83ACE008B86F9 /* GoalsViewController.swift */; };
+		7C6BE8DD1EF8403A008B86F9 /* GoalsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8DC1EF8403A008B86F9 /* GoalsViewInterface.swift */; };
+		7C6BE8E01EF84048008B86F9 /* GoalsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8DE1EF84048008B86F9 /* GoalsInteractorOutput.swift */; };
+		7C6BE8E11EF84048008B86F9 /* GoalsModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8DF1EF84048008B86F9 /* GoalsModuleInterface.swift */; };
+		7C6BE8E31EF84053008B86F9 /* GoalsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8E21EF84053008B86F9 /* GoalsInteractorInput.swift */; };
+		7C6BE8E91EF84103008B86F9 /* GoalsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8E71EF84103008B86F9 /* GoalsRouter.swift */; };
+		7C6BE8EA1EF84103008B86F9 /* GoalsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8E81EF84103008B86F9 /* GoalsWireFrame.swift */; };
+		7C6BE8ED1EF84193008B86F9 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8EC1EF84193008B86F9 /* Goal.swift */; };
+		7C6BE8EF1EF842D1008B86F9 /* GoalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8EE1EF842D1008B86F9 /* GoalDataStore.swift */; };
+		7C6BE8F11EF8438D008B86F9 /* GoalMockDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8F01EF8438D008B86F9 /* GoalMockDataStore.swift */; };
 		7C6BE8F61EF85C20008B86F9 /* Anchorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6BE8F51EF85C20008B86F9 /* Anchorage.framework */; };
-		7C6BE8F91EF85E65008B86F9 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8F81EF85E65008B86F9 /* TasksView.swift */; };
+		7C6BE8F91EF85E65008B86F9 /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE8F81EF85E65008B86F9 /* GoalsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C603F371EFAE79500529D58 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		7C603F371EFAE79500529D58 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		7C6BE8B01EF83A6F008B86F9 /* BeatTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6BE8B31EF83A6F008B86F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6BE8BA1EF83A6F008B86F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C6BE8BD1EF83A6F008B86F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C6BE8BF1EF83A6F008B86F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C6BE8C81EF83ACE008B86F9 /* TasksInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksInteractor.swift; sourceTree = "<group>"; };
-		7C6BE8CC1EF83ACE008B86F9 /* TasksPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksPresenter.swift; sourceTree = "<group>"; };
-		7C6BE8D11EF83ACE008B86F9 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
-		7C6BE8DC1EF8403A008B86F9 /* TasksViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewInterface.swift; sourceTree = "<group>"; };
-		7C6BE8DE1EF84048008B86F9 /* TasksInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksInteractorOutput.swift; sourceTree = "<group>"; };
-		7C6BE8DF1EF84048008B86F9 /* TasksModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksModuleInterface.swift; sourceTree = "<group>"; };
-		7C6BE8E21EF84053008B86F9 /* TasksInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksInteractorInput.swift; sourceTree = "<group>"; };
-		7C6BE8E71EF84103008B86F9 /* TasksRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksRouter.swift; sourceTree = "<group>"; };
-		7C6BE8E81EF84103008B86F9 /* TasksWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksWireFrame.swift; sourceTree = "<group>"; };
-		7C6BE8EC1EF84193008B86F9 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		7C6BE8EE1EF842D1008B86F9 /* TaskDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
-		7C6BE8F01EF8438D008B86F9 /* TaskMockDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskMockDataStore.swift; sourceTree = "<group>"; };
+		7C6BE8C81EF83ACE008B86F9 /* GoalsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsInteractor.swift; sourceTree = "<group>"; };
+		7C6BE8CC1EF83ACE008B86F9 /* GoalsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsPresenter.swift; sourceTree = "<group>"; };
+		7C6BE8D11EF83ACE008B86F9 /* GoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		7C6BE8DC1EF8403A008B86F9 /* GoalsViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsViewInterface.swift; sourceTree = "<group>"; };
+		7C6BE8DE1EF84048008B86F9 /* GoalsInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsInteractorOutput.swift; sourceTree = "<group>"; };
+		7C6BE8DF1EF84048008B86F9 /* GoalsModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsModuleInterface.swift; sourceTree = "<group>"; };
+		7C6BE8E21EF84053008B86F9 /* GoalsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsInteractorInput.swift; sourceTree = "<group>"; };
+		7C6BE8E71EF84103008B86F9 /* GoalsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsRouter.swift; sourceTree = "<group>"; };
+		7C6BE8E81EF84103008B86F9 /* GoalsWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsWireFrame.swift; sourceTree = "<group>"; };
+		7C6BE8EC1EF84193008B86F9 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		7C6BE8EE1EF842D1008B86F9 /* GoalDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDataStore.swift; sourceTree = "<group>"; };
+		7C6BE8F01EF8438D008B86F9 /* GoalMockDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalMockDataStore.swift; sourceTree = "<group>"; };
 		7C6BE8F51EF85C20008B86F9 /* Anchorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Anchorage.framework; path = Carthage/Build/iOS/Anchorage.framework; sourceTree = "<group>"; };
-		7C6BE8F81EF85E65008B86F9 /* TasksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		7C6BE8F81EF85E65008B86F9 /* GoalsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 		7C603F361EFAE76500529D58 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7C603F371EFAE79500529D58 /* TaskTableViewCell.swift */,
+				7C603F371EFAE79500529D58 /* GoalTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,12 +103,12 @@
 		7C6BE8C51EF83ACE008B86F9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				7C6BE8C61EF83ACE008B86F9 /* Tasks */,
+				7C6BE8C61EF83ACE008B86F9 /* Goals */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		7C6BE8C61EF83ACE008B86F9 /* Tasks */ = {
+		7C6BE8C61EF83ACE008B86F9 /* Goals */ = {
 			isa = PBXGroup;
 			children = (
 				7C6BE8E61EF840E2008B86F9 /* Router */,
@@ -116,14 +116,14 @@
 				7C6BE8CA1EF83ACE008B86F9 /* Presenter */,
 				7C6BE8C71EF83ACE008B86F9 /* Interactor */,
 			);
-			path = Tasks;
+			path = Goals;
 			sourceTree = "<group>";
 		};
 		7C6BE8C71EF83ACE008B86F9 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				7C6BE8E21EF84053008B86F9 /* TasksInteractorInput.swift */,
-				7C6BE8C81EF83ACE008B86F9 /* TasksInteractor.swift */,
+				7C6BE8E21EF84053008B86F9 /* GoalsInteractorInput.swift */,
+				7C6BE8C81EF83ACE008B86F9 /* GoalsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 		7C6BE8CA1EF83ACE008B86F9 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				7C6BE8DF1EF84048008B86F9 /* TasksModuleInterface.swift */,
-				7C6BE8DE1EF84048008B86F9 /* TasksInteractorOutput.swift */,
-				7C6BE8CC1EF83ACE008B86F9 /* TasksPresenter.swift */,
+				7C6BE8DF1EF84048008B86F9 /* GoalsModuleInterface.swift */,
+				7C6BE8DE1EF84048008B86F9 /* GoalsInteractorOutput.swift */,
+				7C6BE8CC1EF83ACE008B86F9 /* GoalsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -141,9 +141,9 @@
 		7C6BE8CF1EF83ACE008B86F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7C6BE8DC1EF8403A008B86F9 /* TasksViewInterface.swift */,
-				7C6BE8D11EF83ACE008B86F9 /* TasksViewController.swift */,
-				7C6BE8F81EF85E65008B86F9 /* TasksView.swift */,
+				7C6BE8DC1EF8403A008B86F9 /* GoalsViewInterface.swift */,
+				7C6BE8D11EF83ACE008B86F9 /* GoalsViewController.swift */,
+				7C6BE8F81EF85E65008B86F9 /* GoalsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 		7C6BE8E51EF840D4008B86F9 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				7C6BE8EC1EF84193008B86F9 /* Task.swift */,
+				7C6BE8EC1EF84193008B86F9 /* Goal.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -169,8 +169,8 @@
 		7C6BE8E61EF840E2008B86F9 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				7C6BE8E81EF84103008B86F9 /* TasksWireFrame.swift */,
-				7C6BE8E71EF84103008B86F9 /* TasksRouter.swift */,
+				7C6BE8E81EF84103008B86F9 /* GoalsWireFrame.swift */,
+				7C6BE8E71EF84103008B86F9 /* GoalsRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -178,8 +178,8 @@
 		7C6BE8EB1EF84188008B86F9 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
-				7C6BE8EE1EF842D1008B86F9 /* TaskDataStore.swift */,
-				7C6BE8F01EF8438D008B86F9 /* TaskMockDataStore.swift */,
+				7C6BE8EE1EF842D1008B86F9 /* GoalDataStore.swift */,
+				7C6BE8F01EF8438D008B86F9 /* GoalMockDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -281,21 +281,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C6BE8EF1EF842D1008B86F9 /* TaskDataStore.swift in Sources */,
-				7C6BE8E01EF84048008B86F9 /* TasksInteractorOutput.swift in Sources */,
-				7C603F381EFAE79500529D58 /* TaskTableViewCell.swift in Sources */,
-				7C6BE8EA1EF84103008B86F9 /* TasksWireFrame.swift in Sources */,
-				7C6BE8F91EF85E65008B86F9 /* TasksView.swift in Sources */,
+				7C6BE8EF1EF842D1008B86F9 /* GoalDataStore.swift in Sources */,
+				7C6BE8E01EF84048008B86F9 /* GoalsInteractorOutput.swift in Sources */,
+				7C603F381EFAE79500529D58 /* GoalTableViewCell.swift in Sources */,
+				7C6BE8EA1EF84103008B86F9 /* GoalsWireFrame.swift in Sources */,
+				7C6BE8F91EF85E65008B86F9 /* GoalsView.swift in Sources */,
 				7C6BE8B41EF83A6F008B86F9 /* AppDelegate.swift in Sources */,
-				7C6BE8D51EF83ACE008B86F9 /* TasksPresenter.swift in Sources */,
-				7C6BE8ED1EF84193008B86F9 /* Task.swift in Sources */,
-				7C6BE8D21EF83ACE008B86F9 /* TasksInteractor.swift in Sources */,
-				7C6BE8F11EF8438D008B86F9 /* TaskMockDataStore.swift in Sources */,
-				7C6BE8E91EF84103008B86F9 /* TasksRouter.swift in Sources */,
-				7C6BE8E31EF84053008B86F9 /* TasksInteractorInput.swift in Sources */,
-				7C6BE8D91EF83ACE008B86F9 /* TasksViewController.swift in Sources */,
-				7C6BE8DD1EF8403A008B86F9 /* TasksViewInterface.swift in Sources */,
-				7C6BE8E11EF84048008B86F9 /* TasksModuleInterface.swift in Sources */,
+				7C6BE8D51EF83ACE008B86F9 /* GoalsPresenter.swift in Sources */,
+				7C6BE8ED1EF84193008B86F9 /* Goal.swift in Sources */,
+				7C6BE8D21EF83ACE008B86F9 /* GoalsInteractor.swift in Sources */,
+				7C6BE8F11EF8438D008B86F9 /* GoalMockDataStore.swift in Sources */,
+				7C6BE8E91EF84103008B86F9 /* GoalsRouter.swift in Sources */,
+				7C6BE8E31EF84053008B86F9 /* GoalsInteractorInput.swift in Sources */,
+				7C6BE8D91EF83ACE008B86F9 /* GoalsViewController.swift in Sources */,
+				7C6BE8DD1EF8403A008B86F9 /* GoalsViewInterface.swift in Sources */,
+				7C6BE8E11EF84048008B86F9 /* GoalsModuleInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
