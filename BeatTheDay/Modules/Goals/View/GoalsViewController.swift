@@ -66,6 +66,7 @@ extension GoalsViewController: UITableViewDataSource {
             fatalError("Wrong cell")
         }
 
+        goalCell.statusImageView.image = #imageLiteral(resourceName: "Time")
         goalCell.nameLabel.text = goals[indexPath.row].name
 
         return goalCell

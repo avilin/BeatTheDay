@@ -11,6 +11,7 @@ import Anchorage
 
 class GoalTableViewCell: UITableViewCell {
 
+    var statusImageView: UIImageView!
     var nameLabel: UILabel!
 
     private var shouldSetupConstraints = true
@@ -28,6 +29,10 @@ class GoalTableViewCell: UITableViewCell {
     }
 
     private func setupView() {
+        statusImageView = UIImageView()
+        statusImageView.contentMode = .scaleAspectFit
+        contentView.addSubview(statusImageView)
+
         nameLabel = UILabel()
         contentView.addSubview(nameLabel)
 
@@ -36,11 +41,15 @@ class GoalTableViewCell: UITableViewCell {
 
     override func updateConstraints() {
         if (shouldSetupConstraints) {
+            statusImageView.leadingAnchor == contentView.leadingAnchor + 8
+            statusImageView.topAnchor == contentView.topAnchor + 8
+            statusImageView.bottomAnchor == contentView.bottomAnchor - 8
+            statusImageView.widthAnchor == statusImageView.heightAnchor
 
-            nameLabel.leadingAnchor == contentView.leadingAnchor + 8
-            nameLabel.trailingAnchor == contentView.trailingAnchor + 8
+            nameLabel.leadingAnchor == statusImageView.trailingAnchor + 8
+            nameLabel.trailingAnchor == contentView.trailingAnchor - 8
             nameLabel.topAnchor == contentView.topAnchor + 8
-            nameLabel.bottomAnchor == contentView.bottomAnchor + 8
+            nameLabel.bottomAnchor == contentView.bottomAnchor - 8
 
             shouldSetupConstraints = false
         }
