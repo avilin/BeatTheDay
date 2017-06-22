@@ -16,6 +16,8 @@ class GoalsViewController: UIViewController {
     fileprivate var goals: [GoalDTO] = []
     fileprivate var goalsView: GoalsView!
 
+    fileprivate let refreshControl = UIRefreshControl()
+
     override func loadView() {
         super.loadView()
 
@@ -30,11 +32,19 @@ class GoalsViewController: UIViewController {
         goalsView.tableView.register(GoalTableViewCell.self, forCellReuseIdentifier: "GoalCell")
         goalsView.tableView.dataSource = self
 
+        if #available(iOS 10.0, *) {
+            goalsView.tableView.refreshControl = refreshControl
+        } else {
+            goalsView.tableView.addSubview(refreshControl)
+        }
+        refreshControl.addTarget(self, action: #selector(updateView), for: .valueChanged)
+
         updateView()
     }
 
     func updateView() {
         presenter?.updateView()
+        refreshControl.endRefreshing()
     }
 
 }
