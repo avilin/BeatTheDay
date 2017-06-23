@@ -9,5 +9,6 @@
 protocol GoalsInteractorInput: class {
 
     func fetchAllGoals()
+    func statusForGoal(_ goal: Goal) -> GoalStatus
 
 }

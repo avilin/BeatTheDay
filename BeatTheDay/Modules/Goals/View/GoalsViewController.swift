@@ -11,7 +11,7 @@ import Anchorage
 
 class GoalsViewController: UIViewController {
 
-    var presenter: GoalsModuleInterface?
+    var presenter: GoalsModuleInterface!
 
     fileprivate var goals: [GoalDTO] = []
     fileprivate var goalsView: GoalsView!
@@ -43,7 +43,7 @@ class GoalsViewController: UIViewController {
     }
 
     func updateView() {
-        presenter?.updateView()
+        presenter.updateView()
         refreshControl.endRefreshing()
     }
 

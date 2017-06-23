@@ -11,8 +11,8 @@ import Foundation
 class GoalsPresenter {
 
     weak var view: GoalsViewInterface?
-    var interactor: GoalsInteractorInput?
-    var router: GoalsWireFrame?
+    var interactor: GoalsInteractorInput!
+    var router: GoalsWireFrame!
 
 }
 
@@ -20,7 +20,7 @@ class GoalsPresenter {
 extension GoalsPresenter: GoalsModuleInterface {
 
     func updateView() {
-        interactor?.fetchAllGoals()
+        interactor.fetchAllGoals()
     }
 
 }
@@ -30,14 +30,7 @@ extension GoalsPresenter: GoalsInteractorOutput {
 
     func goalsFetched(_ goals: [Goal]) {
         let goalDTOs = goals.map { (goal) -> GoalDTO in
-            var status = GoalStatus.pending
-            if goal.completed {
-                status = .completed
-            } else if goal.dueDate > Date() {
-                status = .pending
-            } else {
-                status = .expired
-            }
+            let status = interactor.statusForGoal(goal)
             let date = goal.dueDate.stringWithFormat("dd/MM HH:mm")
             return GoalDTO(name: goal.name, goalStatus: status, date: date)
         }
