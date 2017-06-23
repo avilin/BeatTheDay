@@ -38,7 +38,8 @@ extension GoalsPresenter: GoalsInteractorOutput {
             } else {
                 status = .expired
             }
-            return GoalDTO(name: goal.name, goalStatus: status)
+            let date = goal.dueDate.stringWithFormat("dd/MM HH:mm")
+            return GoalDTO(name: goal.name, goalStatus: status, date: date)
         }
         view?.showGoals(goalDTOs)
     }

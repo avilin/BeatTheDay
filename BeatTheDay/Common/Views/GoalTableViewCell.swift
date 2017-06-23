@@ -13,6 +13,7 @@ class GoalTableViewCell: UITableViewCell {
 
     var statusImageView: UIImageView!
     var nameLabel: UILabel!
+    var dateLabel: UILabel!
 
     private var shouldSetupConstraints = true
 
@@ -36,6 +37,10 @@ class GoalTableViewCell: UITableViewCell {
         nameLabel = UILabel()
         contentView.addSubview(nameLabel)
 
+        dateLabel = UILabel()
+        dateLabel.textAlignment = .right
+        contentView.addSubview(dateLabel)
+
         setNeedsUpdateConstraints()
     }
 
@@ -47,9 +52,13 @@ class GoalTableViewCell: UITableViewCell {
             statusImageView.widthAnchor == statusImageView.heightAnchor
 
             nameLabel.leadingAnchor == statusImageView.trailingAnchor + 8
-            nameLabel.trailingAnchor == contentView.trailingAnchor - 8
             nameLabel.topAnchor == contentView.topAnchor + 8
             nameLabel.bottomAnchor == contentView.bottomAnchor - 8
+
+            dateLabel.leadingAnchor == nameLabel.trailingAnchor + 8
+            dateLabel.topAnchor == contentView.topAnchor + 8
+            dateLabel.bottomAnchor == contentView.bottomAnchor - 8
+            dateLabel.trailingAnchor == contentView.trailingAnchor - 8
 
             shouldSetupConstraints = false
         }

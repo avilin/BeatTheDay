@@ -96,7 +96,8 @@ extension GoalsViewController: UITableViewDataSource {
         goalCell.statusImageView.image = image
         goalCell.backgroundColor = backgroundColor
         
-        goalCell.nameLabel.text = goals[indexPath.row].name
+        goalCell.nameLabel.text = goal.name
+        goalCell.dateLabel.text = goal.date
 
         return goalCell
     }
