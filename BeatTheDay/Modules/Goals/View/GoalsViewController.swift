@@ -76,18 +76,25 @@ extension GoalsViewController: UITableViewDataSource {
             fatalError("Wrong cell")
         }
 
+        goalCell.selectionStyle = .none
+
         let goal = goals[indexPath.row]
 
         var image = #imageLiteral(resourceName: "Time")
+        var backgroundColor = UIColor.gray
         switch goal.goalStatus {
         case .completed:
             image = #imageLiteral(resourceName: "Check")
+            backgroundColor = UIColor.green
         case .pending:
             image = #imageLiteral(resourceName: "Time")
+            backgroundColor = UIColor.gray
         case .expired:
             image = #imageLiteral(resourceName: "Denied")
+            backgroundColor = UIColor.red
         }
         goalCell.statusImageView.image = image
+        goalCell.backgroundColor = backgroundColor
         
         goalCell.nameLabel.text = goals[indexPath.row].name
 
