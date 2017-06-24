@@ -23,9 +23,3 @@ class GoalCellDTO {
     }
 
 }
-
-enum GoalStatus {
-    case completed
-    case pending
-    case expired
-}
