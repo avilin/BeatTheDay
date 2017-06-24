@@ -98,6 +98,7 @@ extension GoalsViewController: UITableViewDataSource {
         
         goalCell.nameLabel.text = goal.name
         goalCell.dateLabel.text = goal.date
+        goalCell.timeLabel.text = goal.time
 
         return goalCell
     }

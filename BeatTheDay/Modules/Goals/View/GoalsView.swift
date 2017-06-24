@@ -29,6 +29,7 @@ class GoalsView: UIView {
 
     private func setupView() {
         tableView = UITableView()
+        tableView.rowHeight = 70
         addSubview(tableView)
 
         setNeedsUpdateConstraints()

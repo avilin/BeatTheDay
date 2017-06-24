@@ -13,11 +13,13 @@ class GoalDTO {
     let name: String
     let goalStatus: GoalStatus
     let date: String
+    let time: String
 
-    init(name: String, goalStatus: GoalStatus, date: String) {
+    init(name: String, goalStatus: GoalStatus, date: String, time: String) {
         self.name = name
         self.goalStatus = goalStatus
         self.date = date
+        self.time = time
     }
 
 }
