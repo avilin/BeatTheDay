@@ -13,7 +13,7 @@ class GoalsViewController: UIViewController {
 
     var presenter: GoalsModuleInterface!
 
-    fileprivate var goals: [GoalDTO] = []
+    fileprivate var goals: [GoalCellDTO] = []
     fileprivate var goalsView: GoalsView!
 
     fileprivate let refreshControl = UIRefreshControl()
@@ -52,7 +52,7 @@ class GoalsViewController: UIViewController {
 // MARK: - GoalsViewInterface
 extension GoalsViewController: GoalsViewInterface {
 
-    func showGoals(_ goals: [GoalDTO]) {
+    func showGoals(_ goals: [GoalCellDTO]) {
         self.goals = goals
         goalsView.tableView.reloadData()
     }

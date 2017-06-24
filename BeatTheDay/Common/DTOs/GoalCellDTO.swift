@@ -1,5 +1,5 @@
 //
-//  GoalDTO.swift
+//  GoalCellDTO.swift
 //  BeatTheDay
 //
 //  Created by Andrés Vicente Linares on 22/6/17.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GoalDTO {
+class GoalCellDTO {
 
     let name: String
     let goalStatus: GoalStatus
