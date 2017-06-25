@@ -11,6 +11,7 @@ import Anchorage
 
 class GoalTableViewCell: UITableViewCell {
 
+    var view: UIView!
     var statusImageView: UIImageView!
     var nameLabel: UILabel!
     var dateTimeStackView: UIStackView!
@@ -22,16 +23,17 @@ class GoalTableViewCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        setupView()
+        setupCell()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        setupView()
+        setupCell()
     }
 
-    private func setupView() {
+    private func setupCell() {
+        setupView()
         setupStatusImageView()
         setupNameLabel()
         setupDateTimeStackView()
@@ -39,15 +41,21 @@ class GoalTableViewCell: UITableViewCell {
         setNeedsUpdateConstraints()
     }
 
+    private func setupView() {
+        view = UIView()
+        view.backgroundColor = UIColor.clear
+        contentView.addSubview(view)
+    }
+
     private func setupStatusImageView() {
         statusImageView = UIImageView()
         statusImageView.contentMode = .scaleAspectFit
-        contentView.addSubview(statusImageView)
+        view.addSubview(statusImageView)
     }
 
     private func setupNameLabel() {
         nameLabel = UILabel()
-        contentView.addSubview(nameLabel)
+        view.addSubview(nameLabel)
     }
 
     private func setupDateTimeStackView() {
@@ -64,24 +72,29 @@ class GoalTableViewCell: UITableViewCell {
         dateTimeStackView.spacing = 8
         dateTimeStackView.translatesAutoresizingMaskIntoConstraints = false
 
-        contentView.addSubview(dateTimeStackView)
+        view.addSubview(dateTimeStackView)
     }
 
     override func updateConstraints() {
-        if (shouldSetupConstraints) {
-            statusImageView.leadingAnchor == contentView.leadingAnchor + 8
-            statusImageView.topAnchor == contentView.topAnchor + 16
-            statusImageView.bottomAnchor == contentView.bottomAnchor - 16
+        if shouldSetupConstraints {
+            view.leadingAnchor == contentView.leadingAnchor + 4
+            view.topAnchor == contentView.topAnchor + 4
+            view.bottomAnchor == contentView.bottomAnchor - 4
+            view.trailingAnchor == contentView.trailingAnchor - 4
+
+            statusImageView.leadingAnchor == view.leadingAnchor + 8
+            statusImageView.topAnchor == view.topAnchor + 16
+            statusImageView.bottomAnchor == view.bottomAnchor - 16
             statusImageView.widthAnchor == statusImageView.heightAnchor
 
             nameLabel.leadingAnchor == statusImageView.trailingAnchor + 8
-            nameLabel.topAnchor == contentView.topAnchor + 8
-            nameLabel.bottomAnchor == contentView.bottomAnchor - 8
+            nameLabel.topAnchor == view.topAnchor + 8
+            nameLabel.bottomAnchor == view.bottomAnchor - 8
 
             dateTimeStackView.leadingAnchor == nameLabel.trailingAnchor + 8
-            dateTimeStackView.topAnchor == contentView.topAnchor + 8
-            dateTimeStackView.bottomAnchor == contentView.bottomAnchor - 8
-            dateTimeStackView.trailingAnchor == contentView.trailingAnchor - 8
+            dateTimeStackView.topAnchor == view.topAnchor + 8
+            dateTimeStackView.bottomAnchor == view.bottomAnchor - 8
+            dateTimeStackView.trailingAnchor == view.trailingAnchor - 8
 
             shouldSetupConstraints = false
         }

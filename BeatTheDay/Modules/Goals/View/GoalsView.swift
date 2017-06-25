@@ -29,14 +29,15 @@ class GoalsView: UIView {
 
     private func setupView() {
         tableView = UITableView()
-        tableView.rowHeight = 70
+        tableView.rowHeight = 78
+        tableView.separatorStyle = .none
         addSubview(tableView)
 
         setNeedsUpdateConstraints()
     }
 
     override func updateConstraints() {
-        if (shouldSetupConstraints) {
+        if shouldSetupConstraints {
             tableView.edgeAnchors == edgeAnchors
 
             shouldSetupConstraints = false

@@ -46,7 +46,7 @@ extension GoalsPresenter: GoalsInteractorOutput {
             }
             let date = goal.dueDate.stringWithFormat("dd/MM/yy")
             let time = goal.dueDate.stringWithFormat("HH:mm a")
-            
+
             return GoalCellDTO(name: goal.name, statusImage: statusImage, statusColor: statusColor, date: date, time: time)
         }
         view?.showGoals(goalCellDTOs)
