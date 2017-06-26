@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Chameleon
 
 class GoalsPresenter {
 
@@ -32,17 +33,17 @@ extension GoalsPresenter: GoalsInteractorOutput {
         let goalCellDTOs = goals.map { (goal) -> GoalCellDTO in
             let status = interactor.statusForGoal(goal)
             var statusImage = #imageLiteral(resourceName: "Time")
-            var statusColor = UIColor.gray
+            var statusColor: UIColor = .flatGray()
             switch status {
             case .completed:
                 statusImage = #imageLiteral(resourceName: "Check")
-                statusColor = UIColor.green
+                statusColor = .flatGreen()
             case .pending:
                 statusImage = #imageLiteral(resourceName: "Time")
-                statusColor = UIColor.gray
+                statusColor = .flatGray()
             case .expired:
                 statusImage = #imageLiteral(resourceName: "Denied")
-                statusColor = UIColor.red
+                statusColor = .flatRed()
             }
             let date = goal.dueDate.stringWithFormat("dd/MM/yy")
             let time = goal.dueDate.stringWithFormat("HH:mm a")

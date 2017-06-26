@@ -8,6 +8,7 @@
 
 import UIKit
 import Anchorage
+import Chameleon
 
 class GoalTableViewCell: UITableViewCell {
 
@@ -33,6 +34,8 @@ class GoalTableViewCell: UITableViewCell {
     }
 
     private func setupCell() {
+        backgroundColor = .clear
+
         setupView()
         setupStatusImageView()
         setupNameLabel()
@@ -43,7 +46,6 @@ class GoalTableViewCell: UITableViewCell {
 
     private func setupView() {
         view = UIView()
-        view.backgroundColor = UIColor.clear
         contentView.addSubview(view)
     }
 
@@ -99,6 +101,14 @@ class GoalTableViewCell: UITableViewCell {
             shouldSetupConstraints = false
         }
         super.updateConstraints()
+    }
+
+    func styleCellWithBackgroundColor(_ backgroundColor: UIColor) {
+        view.backgroundColor = backgroundColor
+        let textColor = ContrastColorOf(backgroundColor, returnFlat: true)
+        nameLabel.textColor = textColor
+        dateLabel.textColor = textColor
+        timeLabel.textColor = textColor
     }
 
 }

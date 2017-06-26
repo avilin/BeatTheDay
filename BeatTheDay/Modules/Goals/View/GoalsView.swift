@@ -8,6 +8,7 @@
 
 import UIKit
 import Anchorage
+import Chameleon
 
 class GoalsView: UIView {
 
@@ -31,6 +32,7 @@ class GoalsView: UIView {
         tableView = UITableView()
         tableView.rowHeight = 78
         tableView.separatorStyle = .none
+        tableView.backgroundColor = .flatWhite()
         addSubview(tableView)
 
         setNeedsUpdateConstraints()
